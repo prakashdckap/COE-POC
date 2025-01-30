@@ -1,0 +1,14 @@
+.rightImage{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    position: unset !important;
+    margin: unset !important;
+    min-width: auto !important;
+    max-width: none !important;
+    min-height: auto !important;
+    max-height: none !important;
+}
+.rightImageParent span{
+    position: unset !important;
+}

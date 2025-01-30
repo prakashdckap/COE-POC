@@ -1,0 +1,54 @@
+.login-page {
+  .containercheckbox {
+    padding-left: 20px;
+
+    .checkbox-checkmark {
+      height: 14px;
+      width: 14px;
+      border: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input:checked ~ .checkbox-checkmark {
+      background-color: #fff;
+    }
+
+    .checkbox-checkmark:after {
+      left: 4px;
+      top: 1px;
+      width: 4px;
+      height: 9px;
+      border: solid #000000;
+      border-width: 0 1.1px 1.1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+  .error-msg{
+    font-size: 13px;
+    color: #e02b27;
+  }
+}
+
+
+
+.forgot-page {
+  label {
+    font-size: 13px;
+    font-weight: 700;
+    @include respond-below(ms) {
+      text-align: center;
+    }
+  }
+}
+
+.shippingtracking {
+  label {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}

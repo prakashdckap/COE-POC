@@ -1,0 +1,85 @@
+//
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// A map of breakpoints.
+$breakpoints: (
+  xs: 575px,
+  ms: 767px,
+  sm: 768px,
+  md: 992px,
+  lg: 1024px,
+  xg: 1200px,
+  bs: 1400px,
+  ls: 1500px
+);
+//
+//  RESPOND ABOVE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin respond-above($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value + 1) {
+      @content;
+    }
+  
+  } @else {
+
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+
+//
+//  RESPOND BELOW
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin respond-below($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value)) {
+      @content;
+    }
+  
+  } @else {
+
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+
+//
+//  RESPOND BETWEEN
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin respond-between($lower, $upper) {
+
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    @media (min-width: $lower-breakpoint + 1) and (max-width: ($upper-breakpoint)) {
+      @content;
+    }
+  
+  } @else {
+
+    @if (map-has-key($breakpoints, $lower) == false) {
+
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    @if (map-has-key($breakpoints, $upper) == false) {
+
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}

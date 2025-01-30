@@ -1,0 +1,162 @@
+/*Font Montserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#nprogress .bar {
+  background: #a80f16 !important;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: hidden;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+  .pdp-description ul {
+    @apply pb-5;
+  }
+
+  .megamenu-subcategory #gtx-trans {
+    @apply hidden;
+  }
+
+  .megamenu-subcategory h3 {
+    @apply font-semibold text-sm uppercase mb-[20px];
+  }
+
+  .megamenu-subcategory li {
+    @apply mb-[10px] leading-[1.35];
+  }
+
+  .megamenu-subcategory li a {
+    @apply font-medium text-[12px]  hover:text-skin-primary hover:border-b-[3px] hover:border-skin-secondary;
+  }
+
+  .megamenu-subcategory .view-all span a {
+    @apply font-semibold;
+  }
+
+  .megamenu-subcategory .view-all a {
+    @apply font-semibold;
+  }
+  .megamenu-subcategory.megamenu-img-grid {
+    padding: 0px 10px !important;
+    @apply w-[50%];
+  }
+
+  .megamenu-img-grid .menu-img-bloc {
+    @apply flex flex-wrap items-center justify-center text-center font-semibold text-[16px]  uppercase;
+  }
+
+  .megamenu-img-grid .menu-img-bloc a {
+    @apply hover:border-skin-secondary hover:border-b-[4px] px-[5px] pb-[15px] hover:text-skin-secondary md:w-[50%] w-[100%] text-[16px] leading-[1.35];
+  }
+
+  .megamenu-subcategory.megamenu-img-grid .menu-img-bloc img {
+    @apply w-[100%] mb-[10px];
+  }
+  /* .megamenu-img-grid .menu-img-bloc img {
+    @apply w-[138px] h-[92px]  mb-[10px];
+  } */
+
+  .pdp-description li {
+    @apply list-disc ml-10 font-[300] text-[14px];
+  }
+
+  :root {
+    --color-text-base: #282828;
+    --color-text-muted: #282828;
+    --color-text-inverted: #ffffff;
+    --color-fill: #f3f4f6;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #000000;
+    --color-primary: #850003;
+    --color-gray: #f0f0f0;
+    --color-footer: #595959;
+    --color-secondary: #a80f16;
+    --color-hover: #f44336;
+  }
+
+  .theme-one {
+    --color-text-base: #764f4f;
+    --color-text-muted: #6b1918;
+    --color-text-inverted: #ffffff;
+    --color-fill: #f3f4f6;
+    --color-button-accent: rgba(255, 0, 0, 1);
+    --color-button-accent-hover: rgba(255, 0, 0, 0.5);
+    --color-hover: #f44336;
+  }
+
+  .theme-two {
+    --color-text-base: #384538;
+    --color-text-muted: #829c82;
+    --color-text-inverted: #ffffff;
+    --color-fill: #f3f4f6;
+    --color-button-accent: rgb(132, 188, 133);
+    --color-button-accent-hover: rgb(153, 244, 154);
+    --color-hover: #f44336;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/*Custom Carousel*/
+.carousel-slider {
+  display: inline-flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-item:hover .quick-view,
+.plp-product-list:hover .quick-view {
+  opacity: 1;
+}
+
+.mobile-sidebar {
+  max-width: calc(100% - 50px);
+}
+
+.mini-cart {
+  box-shadow: 2px 2px 2px #bbb !important;
+}
+
+/*Quantity Input*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .swiper-slide {
+  opacity: 0;
+  transition: all 2s ease !important;
+}
+.swiper-slide-active{
+  opacity: 1;
+} */

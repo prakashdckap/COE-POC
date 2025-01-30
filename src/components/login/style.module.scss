@@ -1,0 +1,41 @@
+.headless_logo {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  position: unset !important;
+  margin: unset !important;
+  min-width: auto !important;
+  max-width: none !important;
+  min-height: auto !important;
+  max-height: none !important;
+}
+.headless_logo_div span {
+  position: unset !important;
+}
+.account_feature_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 25px;
+  border-bottom: 1px solid #979797;
+
+  .account_features {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100px;
+
+    svg,
+    p {
+      display: inline-block;
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.DateOfBirthGrid > div {
+  // padding-left: 5px;
+  padding-right: 5px;
+}

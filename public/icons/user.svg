@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Solid/user</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.375,5.625 C3.375,2.51838281 5.89341797,0 9,0 C12.106582,0 14.625,2.51838281 14.625,5.625 C14.625,8.73161719 12.106582,11.25 9,11.25 C5.89341797,11.25 3.375,8.73161719 3.375,5.625 Z M14.0625,12.375 L13.0585781,12.375 C10.5622734,13.8766289 7.43667188,13.8759961 4.94142188,12.375 L3.9375,12.375 C1.762875,12.375 0,14.137875 0,16.3125 L0,17.15625 C0,17.6222461 0.377753906,18 0.84375,18 L17.15625,18 C17.6222461,18 18,17.6222461 18,17.15625 L18,16.3125 C18,14.137875 16.237125,12.375 14.0625,12.375 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-Comp-L" transform="translate(-971.000000, -81.000000)">
+            <g id="HEADER">
+                <g transform="translate(0.000000, 20.000000)" id="Solid/user">
+                    <g transform="translate(971.000000, 61.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Color/Black" mask="url(#mask-2)" fill="#000000" fill-rule="evenodd">
+                            <rect id="Black" x="0" y="0" width="18" height="18"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

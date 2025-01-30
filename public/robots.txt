@@ -1,0 +1,45 @@
+User-agent: *
+
+
+# Paths (clean URLs)
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /contacts/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /newsletter/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /wishlist/
+Disallow: /account/
+Disallow: /productSearch/
+
+# Files
+Disallow: /*.js
+
+# Do not index pages that are sorted or filtered.
+Disallow: /*?q=
+
+# Block the clone website
+User-agent: AhrefsBot
+User-agent: Baiduspider
+User-agent: EasouSpider
+User-agent: Ezooms
+User-agent: YandexBot
+User-agent: MJ12bot
+User-agent: SiteSucker
+User-agent: HTTrack
+User-agent: WinHTTrack
+User-agent: WebZip
+User-agent: WebCopier
+User-agent: Zeus
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+Sitemap: https://www.elementvape.com/sitemap.xml

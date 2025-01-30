@@ -1,0 +1,39 @@
+.mobile-search-category {
+  @include respond-below(ms) {
+    position: relative;
+
+    .category-product-list{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    .category-input{
+      border: 0;
+      border-bottom:1px solid #666;
+      height: 70px;
+      font-size: 22px;
+      margin-top: 30px;
+
+      &::placeholder {
+        font-size: 18px;
+        color: #9c9c9c;
+      }
+
+    }
+
+    .category-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .search-icon{
+      position: absolute;
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
